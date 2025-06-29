@@ -1,0 +1,7 @@
+"""Convertir grados Celsius a Fahrenheit"""
+# Fórmula: F = C * 9/5 + 32
+
+print   ("Introduce los grados Celcius: ")
+grados_celcius = float(input())
+grados_fahrenheit = (grados_celcius * 9/5) + 32
+print(f"{grados_celcius} grados Celcius son {grados_fahrenheit} grados Fahrenheit.")

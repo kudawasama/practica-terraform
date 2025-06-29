@@ -1,0 +1,115 @@
+#Funciones en Python
+# Las funciones son bloques de código reutilizables que realizan una tarea específica.
+def saludar_usuario(nombre):# Devuelve un saludo personalizado al usuario
+    return f"Hola, {nombre}!"  # Devuelve un saludo personalizado al usuario
+def two_decimal_place(n):  #rounds redondea el numero a dos decimales"""
+    return round(n, 2)      #rounds redondea el numero a dos decimales"""
+def es_par(numero):
+    return numero % 2 == 0  # Devuelve True si el número es par, False si es impar % Residuo de la división
+def saludar(Jose):
+    return (f"Hola, {Jose}!")
+def sumar(a, b):
+    return a + b
+def restar(a, b):
+    return a - b
+def multiplicar(a, b):
+    return a * b
+def dividir(a, b):
+    if b == 0:
+        return "Error: División por cero no permitida."
+    return a / b
+def potencia(base, exponente):
+    return base ** exponente
+def raiz_cuadrada(numero):
+    if numero < 0:
+        return "Error: No se puede calcular la raíz cuadrada de un número negativo."
+    return numero ** 0.5
+def factorial(n):
+    if n < 0:
+        return "Error: No se puede calcular el factorial de un número negativo."
+    if n == 0 or n == 1:
+        return 1
+    resultado = 1
+    for i in range(2, n + 1):
+        resultado *= i
+    return resultado
+def es_primo(numero):
+    if numero <= 1:
+        return False
+    for i in range(2, int(numero ** 0.5) + 1):
+        if numero % i == 0:
+            return False
+    return True
+def fibonacci(n):
+    if n <= 0:
+        return []
+    elif n == 1:
+        return [0]
+    elif n == 2:
+        return [0, 1]
+    
+    fibo = [0, 1]
+    for i in range(2, n):
+        fibo.append(fibo[i - 1] + fibo[i - 2])
+    return fibo
+def es_palindromo(palabra):
+    palabra = palabra.lower().replace(" ", "")
+    return palabra == palabra[::-1]
+def contar_vocales(palabra):
+    vocales = "aeiouáéíóú"
+    contador = 0
+    for letra in palabra.lower(): # lower convierte la palabra a minúsculas        
+            contador += 1
+    return contador
+def contar_consonantes(palabra):
+    consonantes = "bcdfghjklmnpqrstvwxyz"
+    contador = 0
+    for letra in palabra.lower():
+        if letra in consonantes:
+            contador += 1
+    return contador
+def contar_palabras(frase):
+    palabras = frase.split()  # Divide la frase en palabras usando espacios como separador
+    return len(palabras)      # Devuelve el número de palabras en la lista     
+def invertir_cadena(cadena):
+    return cadena[::-1]       # Devuelve la cadena invertida usando slicing
+def eliminar_espacios(cadena):
+    return cadena.replace(" ", "")  # Elimina todos los espacios de la cadena
+def convertir_a_mayusculas(cadena):
+    return cadena.upper()      # Convierte la cadena a mayúsculas
+def convertir_a_minusculas(cadena):
+    return cadena.lower()      # Convierte la cadena a minúsculas   
+def contar_caracteres(cadena):
+    return len(cadena)         # Devuelve el número de caracteres en la cadena  
+def reemplazar_subcadena(cadena, subcadena_vieja, subcadena_nueva):
+    return cadena.replace(subcadena_vieja, subcadena_nueva)  # Reemplaza todas las ocurrencias de una subcadena por otra    
+def ordenar_lista(lista):
+    return sorted(lista)       # Devuelve una nueva lista ordenada de menor a mayor
+def eliminar_duplicados(lista):
+    return list(set(lista))    # Convierte la lista a un conjunto para eliminar duplicados y luego vuelve a convertirla a lista
+def encontrar_maximo(lista):
+    if not lista:
+        return None            # Devuelve None si la lista está vacía
+    return max(lista)          # Devuelve el valor máximo de la lista
+def encontrar_minimo(lista):
+    if not lista:
+        return None            # Devuelve None si la lista está vacía
+    return min(lista)          # Devuelve el valor mínimo de la lista
+def sumar_lista(lista):
+    return sum(lista)          # Devuelve la suma de todos los elementos de la lista
+def promedio_lista(lista):
+    if not lista:
+        return None            # Devuelve None si la lista está vacía
+    return sum(lista) / len(lista)  # Devuelve el promedio de los elementos de la lista
+def contar_elementos(lista):
+    return len(lista)          # Devuelve el número de elementos en la lista
+def encontrar_elemento(lista, elemento):
+    if elemento in lista:
+        return lista.index(elemento)  # Devuelve el índice del primer elemento encontrado
+    return -1  # Devuelve -1 si el elemento no se encuentra en la lista
+def concatenar_listas(lista1, lista2):
+    return lista1 + lista2  # Devuelve una nueva lista que es la concatenación de las dos listas
+def invertir_lista(lista):
+    return lista[::-1]  # Devuelve una nueva lista que es la inversión de la original
+def filtrar_pares(lista):
+    return [x for x in lista if x % 2 == 0]  # Devuelve una nueva lista con los números pares de la original
