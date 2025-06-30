@@ -35,3 +35,16 @@ Nivel 3 – Cadenas y listas
         # Dada una lista de números, suma todos los valores
     15 Buscar un elemento en una lista
         # Pregunta un número y dice si está en la lista o no
+
+
+
+
+
+
+********************************************************************************************
+
+while = "mientras se cumpla la condición, repite"
+for = "para cada elemento en la secuencia, repite"
+try significa "intenta ejecutar esto, y si hay un error, maneja el error sin que el programa se detenga".
+        El bloque try intenta ejecutar el código.
+        Si ocurre un error, el programa no se detiene: salta al bloque except y muestra el mensaje de error.
